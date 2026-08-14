@@ -32,6 +32,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "rest_framework",
+    "rest_framework_simplejwt",
+    "drf_spectacular",
+    "django_filters",
     "notesAPI.apps.NotesapiConfig",
     "django.contrib.admin",
     "django.contrib.auth",

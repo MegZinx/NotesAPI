@@ -6,7 +6,7 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from notesAPI.views import NoteViewSet
 
 router = DefaultRouter()
-router.register("notesAPI", NoteViewSet, basename="note")
+router.register("notes", NoteViewSet, basename="note")
 
 urlpatterns = [
     path("admin/", admin.site.urls),

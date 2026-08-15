@@ -40,7 +40,13 @@ Postman collection: [`postman_collection.json`](./postman_collection.json), with
 - [`notesapi-local.postman_environment.json`](./notesapi-local.postman_environment.json) — points at `http://127.0.0.1:8000`
 - [`notesapi-live.postman_environment.json`](./notesapi-live.postman_environment.json) — points at the deployed API above
 
-To use it: import all three files into Postman, select an environment, fill in your own credentials on the **Login** request, and send it — the access token and refresh token are captured automatically via a post-response script and reused across the rest of the collection, so no manual copy-pasting of tokens is needed between requests.
+To use it: import all three files into Postman and select an environment.
+ 
+- **Testing against the live deployment:** the Login request's body is set to a shared demo account (`demo` / `demopass123`). Enter the provided credentials. Since this account is shared, avoid relying on its notes persisting between sessions.
+- **Testing locally:** run the project locally first (see below), create your own account with `python manage.py createsuperuser` or via `/admin/`, and update the Login request's body with those credentials.
+
+
+Either way, once Login succeeds, the access token and refresh token are captured automatically via a post-response script and reused across the rest of the collection — no manual copy-pasting of tokens between requests.
 
 ## Running Locally
 

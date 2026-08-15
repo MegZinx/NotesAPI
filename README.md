@@ -33,7 +33,12 @@ Python | Django | Django REST Framework | Simple JWT | drf-spectacular | SQLite 
 ## API Docs
 
 Live Swagger: [https://notesapi.pythonanywhere.com/api/docs/](https://notesapi.pythonanywhere.com/api/docs/)
-Postman collection: Coming Soon
+
+Postman collection: [`postman_collection.json`](./postman_collection.json), with two ready-to-import environments:
+- [`notesapi-local.postman_environment.json`](./notesapi-local.postman_environment.json) — points at `http://127.0.0.1:8000`
+- [`notesapi-live.postman_environment.json`](./notesapi-live.postman_environment.json) — points at the deployed API above
+
+To use it: import all three files into Postman, select an environment, fill in your own credentials on the **Login** request, and send it — the access token and refresh token are captured automatically via a post-response script and reused across the rest of the collection, so no manual copy-pasting of tokens is needed between requests.
 
 ## Running Locally
 
@@ -73,4 +78,4 @@ python manage.py test
 
 ## Demo Video
 
-Coming Soon
+[link]

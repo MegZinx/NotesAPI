@@ -34,6 +34,8 @@ Python | Django | Django REST Framework | Simple JWT | drf-spectacular | SQLite 
 
 Live Swagger: [https://notesapi.pythonanywhere.com/api/docs/](https://notesapi.pythonanywhere.com/api/docs/)
 
+A shared demo account (demo / demopass123) is available for testing the Login endpoint — note that this account's notes are visible to anyone using it, so avoid storing anything sensitive
+
 Postman collection: [`postman_collection.json`](./postman_collection.json), with two ready-to-import environments:
 - [`notesapi-local.postman_environment.json`](./notesapi-local.postman_environment.json) — points at `http://127.0.0.1:8000`
 - [`notesapi-live.postman_environment.json`](./notesapi-live.postman_environment.json) — points at the deployed API above

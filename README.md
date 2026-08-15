@@ -86,4 +86,4 @@ python manage.py test
 
 ## Demo Video
 
-[link]
+https://youtu.be/_HiRwh4GeHU
